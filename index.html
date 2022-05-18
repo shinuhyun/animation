@@ -6,13 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
     <title>Animation</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+        font-size: 3rem;
+        color: rgb(230, 230, 230);
+        padding: 0 2rem;
+        font-weight: 600;
+        overflow: hidden;
+      }
+      video {
+        height: 120%;
+      }
+      h1 {
+        position: fixed;
+      }
+    </style>
   </head>
   <body>
-    <h1 id="title">Try animation with TypeIt!</h1>
+    <h1 id="title"></h1>
+    <video playsinline autoplay muted loop poster="cake.jpg">
+      <source src="./ocean.mp4" type="video/mp4" />
+    </video>
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        new TypeIt("#title").pause(500).delete(7).type("Library!!").go();
-      });
+      new TypeIt("#title", {
+        strings: "Try animation with TypeIt!",
+        speed: 85,
+        loop: true,
+      })
+        .pause(500)
+        .delete(7, { speed: 70 })
+        .pause(500)
+        .type("fun!", {
+          speed: 70,
+        })
+        .go();
     </script>
   </body>
 </html>
