@@ -4,7 +4,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, blue, pink);
+  background: linear-gradient(
+    to bottom right,
+    rgba(140, 140, 255, 0.757),
+    rgba(249, 203, 211, 0.878)
+  );
   font-weight: 500;
 }
 
@@ -19,7 +23,7 @@ section {
   border-radius: 1.8rem;
   background: linear-gradient(
     to bottom right,
-    rgba(255, 255, 255, 0.674),
+    rgba(255, 255, 255, 0.62),
     rgba(233, 233, 233, 0.081)
   );
   backdrop-filter: blur(12px);
