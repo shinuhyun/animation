@@ -1,0 +1,59 @@
+html,
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, blue, pink);
+  font-weight: 500;
+}
+
+.site-wrap {
+  width: 40%;
+  padding: 4%;
+}
+
+section {
+  padding: 3rem;
+  margin-bottom: 4rem;
+  border-radius: 1.8rem;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.674),
+    rgba(233, 233, 233, 0.081)
+  );
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+[data-scroll] {
+  opacity: 0;
+  will-change: transform, scale, opacity;
+  transform: translateY(6rem) scale(0.93);
+  transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+[data-scroll="out"] {
+  opacity: 0;
+}

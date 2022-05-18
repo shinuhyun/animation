@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>ScrollOut</title>
+  </head>
+  <body>
+    <div class="site-wrap">
+      <section data-scroll>
+        <h1 class="title">Scroll on down</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+      </section>
+      <section data-scroll>
+        <h1 class="title">Scroll on down</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+      </section>
+      <section data-scroll>
+        <h1 class="title">Scroll on down</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+      </section>
+      <section data-scroll>
+        <h1 class="title">The end</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus
+          sint ex minus quibusdam saepe, non quis vitae recusandae ratione sunt.
+          At totam excepturi nobis rerum deserunt illo quidem voluptatum.
+        </p>
+      </section>
+    </div>
+    <script>
+      ScrollOut({
+        onShown: (element) => {
+          new TypeIt(element.querySelector(".title"), {
+            startDelay: 500,
+            cursor: false,
+          })
+            .pause(2000)
+            .go();
+        },
+      });
+    </script>
+  </body>
+</html>
